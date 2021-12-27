@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/453f31b8fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="../Package/Image/logo.png" alt="education logo"></a>
+            <div class="nav-links">
+                <span class="menu-close" onclick="hideMenu()"></span>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="../Course/index.html">Course</a></li>
+                    <li><a href="../Blog/index.html">Blog</a></li>
+                    <li><a href="../Contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="hum-icon" onclick="showMenu()"></span>
+        </nav>
+
+        <div class="showcase">
+            <h1>About Us</h1>
+        </div>
+    </header>
+
+    <main>
+         <!-- About -->
+         <section class="about">
+            <div class="flex-item">
+                <h1 class="heading">We are the world's largest university</h1>
+                <p class="paragraph">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius qui error explicabo nostrum nesciunt 
+                    sequi aliquam ipsam ullam cumque, aspernatur libero debitis vel itaque aperiam voluptatem amet vitae 
+                    a ducimus facilis? Debitis unde porro, hic est dolor facilis error aspernatur!
+                </p>
+                <a href="#" class="btn">EXPLORE NOW</a>
+            </div> 
+            <figure class="flex-item">
+                <img src="../Package/Image/about.jpg" alt="People at a meeting">
+            </figure>
+        </section>
+    </main>
+
+    <!-- Footer --> 
+    <footer>
+        <h3>About Us</h3>
+        <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti porro eum saepe<br> dignissimos 
+            ducimus sed aliquam enim, voluptates laboriosam ea beatae nam est temporibus soluta.
+        </p>
+
+        <div class="social-media">
+            <a href="https://facebook.com" target= "blank"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com" target= "blank"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://instagram.com" target= "blank"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://linkedin.com" target= "blank"><i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+        </div>
+
+        <p class="paragraph">copyright&copy 2021 flavor Inc. all rights reserved</p>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links');
+
+        function showMenu() {
+            navLinks.style.width = '200px';
+        }
+
+        function hideMenu() {
+            navLinks.style.width = '0';
+        }
+    </script>       
+</body>
+</html>
