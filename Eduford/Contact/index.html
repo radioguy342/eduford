@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/453f31b8fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="../Package/Image/logo.png" alt="education logo"></a>
+            <div class="nav-links">
+                <span class="menu-close" onclick="hideMenu()"></span>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="../Course/index.html">Course</a></li>
+                    <li><a href="../Blog/index.html">Blog</a></li>
+                    <li><a href="../Contact/index.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="hum-icon" onclick="showMenu()"></span>
+        </nav>
+
+        <div class="showcase">
+            <h1>Contacts</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact -->
+        <section class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d61485.245344541414!2d32.5255168!3d15.600844799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1640490618624!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+               <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>XYZ road, ABC building</h5>
+                            <p>Khartoum, Jebra, Sudan</p>
+                        </span>
+                    </div>
+                    <div class="">
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+1 0123456789</h5>
+                            <p>Sunday to Thursday, 10AM to 5PM</p>
+                        </span>
+                    </div>
+                    <div class="">
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>info@saeedtaher.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+               </div>
+               <div class="message-us">
+                <form action="" class="comment-form">
+                    <input type="text" placeholder="Enter your name">
+                    <input type="email" placeholder="Enter email address">
+                    <input type="text" placeholder="Enter your subject">
+
+                    <textarea rows="7" placeholder="Message"></textarea>
+                    <button type="submit" class="btn" >Send Message</button>
+                </form>
+               </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer --> 
+    <footer>
+        <h3>About Us</h3>
+        <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti porro eum saepe<br> dignissimos 
+            ducimus sed aliquam enim, voluptates laboriosam ea beatae nam est temporibus soluta.
+        </p>
+
+        <div class="social-media">
+            <a href="https://facebook.com" target= "blank"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com" target= "blank"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://instagram.com" target= "blank"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://linkedin.com" target= "blank"><i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+        </div>
+
+        <p class="paragraph">copyright&copy 2022 flavor Inc. all rights reserved</p>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links');
+
+        function showMenu() {
+            navLinks.style.width = '200px';
+        }
+
+        function hideMenu() {
+            navLinks.style.width = '0';
+        }
+    </script>       
+</body>
+</html>
